@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+
+    <script>
+        /* Rock-Paper-Scissors Game ✊✋✌
+        Ask the user to choose "rock", "paper", or "scissors".
+        Store a random choice for the computer.
+        Use if-else to determine the winner.
+        */
+
+
+        const choose = prompt("Enter Your Choice (rock or paper or scissor): ")
+        const computerChoice = 'paper';
+
+        if(choose === 'rock'){
+            if(computerChoice === 'rock'){
+                alert('Tie');
+            }else if(computerChoice === 'paper'){
+                alert('You Lose');
+            }else if(computerChoice === 'scissor'){
+                alert('You Win');
+            }
+        }else if(choose === 'paper'){
+
+            if(computerChoice === 'paper'){
+                alert('Tie');
+            }else if(computerChoice === 'scissor'){
+                alert('You Lose');
+            }else if(computerChoice === 'rock'){
+                alert('You Win');
+            }
+
+        }else if(choose === 'scissor'){
+            if(computerChoice === 'scissor'){
+                alert('tie');
+            }else if(computerChoice === 'paper'){
+                alert('You Win');
+            }else if(computerChoice === 'rock'){
+                alert('You Lose');
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

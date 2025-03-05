@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+</head>
+<body>
+
+    <script>
+        /*
+
+        Basic Discount Calculator 🏷
+        Ask the user for a product price and discount percentage.
+        Calculate the final price after applying the discount.
+        Show the result.
+    
+        */
+
+        const price = prompt('Enter Product Price: ');
+        const disCount = prompt('How Much You Get: ');
+        const calculateperCentages = disCount/100;
+        const calculateDiscount = price*calculateperCentages;
+        const totalPrice = price-calculateDiscount;
+
+        alert(totalPrice);
+
+
+    </script>
+    
+</body>
+</html>

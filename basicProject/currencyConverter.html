@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+
+    <script>
+
+        /*Currency Converter
+        Input: Number (amount in currency)
+        Logic: Convert currency to another (e.g., dollars to euros).
+        Output: Display converted amount.
+        */
+
+        const usdInput = parseFloat(prompt("Enter Dollar Amount: "));
+        const exChangeRate = 0.94;
+        const euro = usdInput * exChangeRate;
+        alert('Your usd Is '+ usdInput + " To get Euro Amount is "+ euro )
+
+
+    </script>
+    
+</body>
+</html>

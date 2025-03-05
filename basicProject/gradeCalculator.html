@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+
+        Grade Calculator 📊
+        Ask the user for a score (0-100).
+        Use if-else to determine the grade:
+        90+ → A
+        80-89 → B
+        70-79 → C
+        60-69 → D
+        <60 → F
+        Display the grade.
+                
+        */
+
+
+        const score = prompt("Enter Your Score");
+
+        if(score>=90 && score<=100){
+            alert("A");
+        }else if(score>=80 && score<90){
+            alert("B");
+        }else if(score>=70 && score<80){
+            alert("C")
+        }else if(score>=60 && score<70){
+            alert("D")
+        }else if(score<60){
+            alert("F")
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

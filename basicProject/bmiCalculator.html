@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <script>
+        /*BMI Calculator
+        Input: Number (weight, height)
+        Logic: Calculate BMI using formula: BMI = weight / (height * height)
+        Output: Display BMI and category.
+
+        BMI categories 
+        Underweight: BMI is less than 18.5
+        Healthy weight: BMI is between 18.5 and 24.9
+        Overweight: BMI is between 25 and 29.9
+        Obese: BMI is 30 or higher
+        Severe obesity: BMI is 40 or higher
+        */
+
+
+        const weight = 65.10;
+        const height = 1.75;
+        const bmi = (weight/(height*height)).toFixed(2);
+        console.log(bmi);
+
+        if(bmi<18.5){
+            console.log('Underweight');
+        }else if(bmi>= 18.5 && bmi<=24.9){
+            console.log('Healthy Weight');
+        }else if(bmi>=25 && bmi<29.9){
+            console.log("Over Weight");
+        }else if(bmi>=29 && bmi<40){
+            console.log('Obese');
+        }else if(bmi>39){
+            console.log('Severe obesity');
+        }
+
+       
+
+        
+
+        
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

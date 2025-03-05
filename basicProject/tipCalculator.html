@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+
+    <script>
+        /*Simple Tip Calculator
+        Input: Number (bill amount)
+        Logic: Calculate a tip (e.g., 15% of the bill).
+        Output: Display total bill with tip.
+        */
+
+        const bilAmount = parseFloat(prompt('Enter Bil Amount: '));
+        const tipCalculate = bilAmount * 15/100;
+        const totalBil = bilAmount + tipCalculate;
+        alert(totalBil.toFixed(2));
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
