@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body>
+
+    <script>
+
+        /*  
+        Basic Calculator – Perform addition, 
+        subtraction, multiplication, and division.
+        */
+
+        const num1 = parseFloat(prompt("Enter a Number", ));
+        const op = prompt("Enter op(+,-,*,/): ")
+        const num2 = parseFloat(prompt("Enter another Number", ));
+
+        if(op === '+'){
+            console.log(num1+num2);
+        }else if(op === '-'){
+            console.log(num1-num2);
+        }else if(op === '*'){
+            console.log(num1*num2)
+        }else if(op === '/'){
+            console.log(num1/num2)
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
