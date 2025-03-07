@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Evaluation System</title>
+</head>
+<body>
+
+    <script>
+
+        /*Create a function that takes a score as an argument and 
+        returns the corresponding grade (A, B, C, etc.) based on a grading scale.
+        */
+
+       
+        function grade(score){
+            if(score>=90 && score<=100){
+                alert("Golden A+");
+            }else if(score>=80 && score<90){
+                alert('A+');
+            }else if(score>=70 && score<80){
+                alert('A');
+            }else if(score>=60 && score<70){
+                alert('A-');
+            }else if(score>=50 && score<60){
+                alert('B');
+            }else if(score>=40 && score<50){
+                alert('C');
+            }else if(score>=33 && score<40){
+                alert('D');
+            }else{
+                alert('Sorry! You are Fail In The exam');
+            }
+        };
+
+        grade(40);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+
+   <button onclick=" playGame('Rock');">Rock</button>
+    <button onclick="playGame('Paper')">Paper</button>
+   <button  onclick="playGame('Scissor')">Scissor</button>
+   <button onclick="
+
+   score.wins = 0;
+   score.lose = 0;
+   score.tie = 0;
+
+   ">Reset</button>
+
+    <script>
+
+        let score = {
+            wins:0,
+            lose:0,
+            tie:0
+        };
+
+        function playGame(playerMove){
+            const computerMoved = computerChoice();
+
+            let result;
+
+            if(playerMove === 'Rock'){
+                if(computerMoved === 'Rock'){
+                    result = 'Match Is Tie';
+                }else if(computerMoved === 'Paper'){
+                    result = 'You Lose The Match';
+                }else if(computerMoved === 'Scissor'){
+                    result = 'You win The Match';
+                }
+                
+            }else if(playerMove === 'Paper'){
+                if(computerMoved === 'Paper'){
+                    result = 'Match Is Tie';
+                }else if(computerMoved === 'Rock'){
+                    result = 'You win The Match';
+                }else if(computerMoved === 'Scissor'){
+                    result = 'You Lose The Match';
+                }
+               
+            }else if(playerMove === 'Scissor'){
+                if(computerMoved === 'Scissor'){
+                    result = 'Match Is Tie';
+                }else if(computerMoved === 'Paper'){
+                   result = 'You win The Match';
+                }else if(computerMoved === 'Rock'){
+                   result = 'You Lose The Match';
+
+                }
+                
+             }; 
+
+             if(result === 'Match Is Tie'){
+                score.tie += 1;
+             }else if(result === 'You win The Match'){
+                score.wins += 1;
+             }else if(result === 'You Lose The Match'){
+                score.lose += 1;
+             }
+             alert(
+             `The Result Is: ${result} 
+             Wins:${score.wins},Lose ${score.lose}, Tie: ${score.tie}
+             
+             `);
+             return result;                       
+            };
+
+
+
+
+
+
+
+        let computerMove;
+        let result;
+        function computerChoice(){
+                 computerMove = Math.random();
+                if(computerMove>0 && computerMove<1/3){
+                    result = 'Rock';
+                }else if(computerMove>1/3 && computerMove<2/3){
+                   result = 'Paper';
+                }else if(computerMove>2/3 && computerMove<1){
+                   result = 'Scissor';
+                }
+                return result;
+        };
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

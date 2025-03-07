@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+        Simple Calculator:
+        Create a function that takes two numbers and an operator (+, -, *, /) 
+        as arguments and returns the result of the calculation.
+        */
+
+        const num1 = parseFloat(prompt('Enter a Number: '));
+        const op = prompt('Enter Operator: ');
+        const num2 = parseFloat(prompt('Enter another Number: '))
+
+
+        function Calculator(num1,num2){
+            if(op === '+'){
+                console.log(num1+num2);
+            }else if(op === '-'){
+                console.log(num1-num2);
+            }else if(op === '*'){
+                console.log(num1*num2);
+            }else if(op === '/'){
+                console.log(num1/num2);
+            }else{
+                console.log('Invalid op');
+            }
+        }
+
+        Calculator(num1,num2);
+
+
+    </script>
+    
+</body>
+</html>

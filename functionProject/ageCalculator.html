@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+<body>
+
+    <script>
+        /*
+        Build a function that takes a birth year and returns the 
+        person's age based on the current year.
+       */
+
+       function ageCalculator(birthYear){
+        const currentYear = new Date().getFullYear();
+        const age = currentYear-birthYear;
+        return age;
+       }
+
+       const ageCheck = ageCalculator(1998);
+       alert(ageCheck);
+
+
+    </script>
+    
+</body>
+</html>
