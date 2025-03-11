@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+
+    <style>
+
+        done{
+
+            display: inline;
+            background-color: blueviolet;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <p>Todo List</p>
+    <input class="input" type="text" placeholder="Todo name">
+    <input class ="date" type="date">
+    <button onclick="addTodoItem();">Add</button>
+    <p class="item"></p>
+
+
+    <script>
+
+        let toToItem = [];
+
+        function addTodoItem(){
+          const inputElement = document.querySelector('.input');
+          const inputElement2 = document.querySelector('.date');
+          const inputValue = inputElement.value;
+          const inputValue2 = inputElement2.value;
+
+          toToItem.push({
+                inputValue,
+                inputValue2
+          });
+
+
+
+          inputElement.value = '';
+          inputElement2.value = '';
+
+          renderToDoList();
+
+        };
+
+       
+
+        
+
+        function renderToDoList(){
+
+
+            let htmlforEachTodo = '';
+
+            toToItem.forEach(function (item,index){
+            const {inputValue,inputValue2} =  item;
+            const html = `<div class="done">
+
+                <p>${inputValue}</p> 
+                <p>${inputValue2} 
+                <button onclick = "deleteTodo(${index});"> Delete </button>
+                
+                </div>`;
+            htmlforEachTodo += html;
+            
+          })
+
+          document.querySelector('.item').innerHTML =  htmlforEachTodo;
+
+        
+
+
+        }
+
+
+
+
+
+
+          
+
+        function deleteTodo(index){
+            toToItem.splice(index,1);
+            renderToDoList();
+        }
+
+
+       
+        
+
+          
+
+    </script>
+    
+</body>
+</html>

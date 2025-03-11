@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple toDo</title>
+</head>
+<body>
+
+    <p>Simple Todo</p>
+    <input class="value" placeholder="Todo name">
+    <button onclick="addTodo();">Add</button>
+
+    <script>
+
+        const toDo = [];
+
+        function addTodo(){
+           const item = document.querySelector('.value');
+           const itemValue = item.value;
+           toDo.push(itemValue);
+           console.log(toDo);
+           item.value = '';
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
